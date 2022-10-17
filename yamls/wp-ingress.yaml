@@ -10,7 +10,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: localhost/wp
+      - path: /wp
         pathType: Prefix
         backend:
           service:
