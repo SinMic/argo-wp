@@ -27,7 +27,7 @@ spec:
       containers:
       - name:  wp
         image: wordpress:cli-php8.0
-        
+        command: ['/bin/bash']
         env:
         - name: WORDPRESS_DB_HOST
           value: mysql-svc
