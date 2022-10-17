@@ -27,7 +27,7 @@ spec:
       containers:
       - name:  wp
         image: wordpress:cli-php8.0
-        restartPolicy: never
+        
         env:
         - name: WORDPRESS_DB_HOST
           value: mysql
@@ -44,6 +44,7 @@ spec:
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
+      restartPolicy: Never
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
