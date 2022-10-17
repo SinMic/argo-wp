@@ -27,13 +27,6 @@ spec:
       containers:
       - name:  wp
         image: wordpress:cli-php8.0
-        resources:
-          requests:
-            cpu: 100m
-            memory: 999Mi
-          limits:
-            cpu: 100m
-            memory: 999Mi
         env:
         - name: WORDPRESS_DB_HOST
           value: mysql
