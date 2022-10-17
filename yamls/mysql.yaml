@@ -41,8 +41,8 @@ spec:
         volumeMounts:
         - name: config-volume
           mountPath: /etc/my.cnf
-    volumes:
-      - name: config-volume
-        configMap:
-          name: sql-config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: sql-config
         
