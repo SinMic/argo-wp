@@ -26,8 +26,7 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name:  wp
-        image: wordpress:cli-php8.0
-        command: ['/bin/bash']
+        image: wordpress:php8.0
         env:
         - name: WORDPRESS_DB_HOST
           value: mysql-svc
