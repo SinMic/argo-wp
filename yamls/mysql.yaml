@@ -40,7 +40,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: config-volume
-          mountPath: /etc/my.conf
+          mountPath: /etc/my.cnf
       volumes:
         - name: config-volume
           configMap:
