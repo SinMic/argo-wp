@@ -9,7 +9,7 @@ spec:
   ingressClassName: nginx
   rules:
   - http:
-      host: localhost
+      
       paths:
       - path: /wp
         pathType: Prefix
