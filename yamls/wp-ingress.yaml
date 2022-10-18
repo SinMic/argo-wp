@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-   - host: sinyleming.com
+   - host: wp.sinyleming.com
      http:
       paths:
       - path: /
